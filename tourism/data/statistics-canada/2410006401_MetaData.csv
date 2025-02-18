@@ -1,0 +1,72 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Trips, nights and spending for visitors to Canada, by residency, trip purpose and mode of transport","24100064",,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2410006401",1;2,"CURRENT - a cube available to the public and that is current","Quarterly","2018-01-01","2024-04-01","5",
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+"1","Geography",,""
+"2","Area of residence",,""
+"3","Main trip purpose",,""
+"4","Mode of transport to enter Canada",,""
+"5","Trip statistics",,""
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+"1","Canada","[11124]","1","","",,
+"2","Non-resident visitors to Canada","","1","","",,
+"2","United States of America residents","","2","1","",,
+"2","United States of America residents, excursionists (same-day)","","3","2","",,
+"2","United States of America residents, tourists (overnight)","","4","2","",,
+"2","Residents of countries other than the United States of America","","5","1","",3,
+"3","All main trip purposes","","1","","",,
+"3","Personal","","2","1","",,
+"3","Holidays, leisure and recreation","","3","2","",,
+"3","Visiting friends and relatives","","4","2","",,
+"3","Other personal","","5","2","",,
+"3","Business and professional","","6","1","",4,
+"4","Entries via all modes of transport","","1","","",,
+"4","Entries via commercial air","","2","1","",,
+"4","Entries via a mode other than commercial air","","3","1","",,
+"5","Trips","","1","","",,
+"5","Nights","","2","","",,
+"5","Expenditures","","3","","",5;6,
+"5","Accommodation expenditures","","4","3","",,
+"5","Clothing and gift expenditures","","5","3","",,
+"5","Food and beverage expenditures","","6","3","",,
+"5","Recreation and entertainment expenditures","","7","3","",,
+"5","Transportation expenditures","","8","3","",5,
+"5","Other expenditures","","9","3","",,
+"5","Nights per trip","","10","","",7,
+"5","Expenditures per trip","","11","","",5,
+"5","Expenditures per night","","12","","",5,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period","..",
+"less than the limit of detection","<LOD",
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded","0s",
+"data quality: excellent","A",
+"data quality: very good","B",
+"data quality: good","C",
+"data quality: acceptable","D",
+"use with caution","E",
+"too unreliable to be published","F",
+"not applicable","...",
+"preliminary","p",
+"revised","r",
+"suppressed to meet the confidentiality requirements of the Statistics Act","x",
+"terminated","t",
+
+"Survey Code","Survey Name"
+"5261","Visitor Travel Survey"
+
+"Subject Code","Subject Name"
+"24","Travel and tourism"
+
+"Note ID",Note
+1,"Comparisons of historical Visitor Travel Survey (VTS) results and current VTS results must be done with caution due to the use of different methods to produce estimates. Data from 2018 to the first quarter of 2020 were produced using a combination of the Air Exit Survey (AES), record imputation and invitation cards. Data from the second quarter of 2020 to the fourth quarter of 2022 were produced using a model based on 2019 VTS estimates adjusted with Frontier Counts benchmarks, and alternate data. Starting with the first quarter of 2023, data are produced for visitors entering Canada by air using the AES and for visitors entering Canada by modes other than commercial air using a model based on historical visitor survey data from 2013 to 2019. This data is adjusted using Frontier Counts and by comparing historical AES results with current AES results."
+2,"Quality indicators can only be calculated using survey data and are therefore available for the time periods prior to the pandemic (Q1 2020 and earlier) for all modes of entry and for the time periods starting in Q1 2023 for entry by air commercial only. Between Q2 2020 and Q4 2022, no data quality indicators could be produced since there was no collection. Estimates based on fewer than five Visitor Travel Survey records (for Q1 2020 and earlier) or fewer than five Air Exit Survey records (for Q1 2023 onward) were suppressed from this table and replaced with a quality indicator of F, and estimates based on between five and nine records were assigned a data quality indicator of E. For Q1 2023 onward, if an air commercial estimate was suppressed, the non-air commercial and total estimates for the same domain were also suppressed."
+3,"Non-resident visitors residing in a country other than the United States of America are also referred to as overseas visitors."
+4,"Business and professional includes commuting to work, attending a meeting, sales call or service call, attending a conference, convention or trade show and seasonal workers."
+5,"Expenditures do not include commercial fares to travel between countries."
+6,"For 2018 and 2019, total spending differs from total spending reported by category because U.S.-resident excursionists (same-day travellers) entering Canada by car were only asked for their total spending."
+7,"The calculation of nights per trip includes same-day trips (zero nights)."
+
+"Correction ID","Correction Date","Correction Note"

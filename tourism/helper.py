@@ -75,3 +75,7 @@ def millions_formatter(x, pos):
 # Define the formatter function
 def thousands_formatter(x, pos):
     return f'{x / 1e3:.0f}K'
+
+# Define the formatter function
+def billions_formatter(x, pos):
+    return f'{x / 1e9:.0f}B'

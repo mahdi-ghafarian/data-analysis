@@ -60,8 +60,6 @@ period = 'M'
 df = create_df_sc(pid,start_date,selected_members,period)
 '''
 
-
-
 def wrap_labels(ax, width, break_long_words=False):
     labels = []
     for label in ax.get_xticklabels():
@@ -69,4 +67,11 @@ def wrap_labels(ax, width, break_long_words=False):
         labels.append(textwrap.fill(text, width=width,
                       break_long_words=break_long_words))
     ax.set_xticklabels(labels, rotation=0)
+    
+# Define the formatter function
+def millions_formatter(x, pos):
+    return f'{x / 1e6:.0f}M'
 
+# Define the formatter function
+def thousands_formatter(x, pos):
+    return f'{x / 1e3:.0f}K'
